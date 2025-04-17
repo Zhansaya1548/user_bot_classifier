@@ -1,5 +1,5 @@
 import pandas as pd
-from data_loader.loader import loader
+from data_loader.loader import DataLoader
 from preprocessing.data_cleaner import clean_data
 from preprocessing.feature_engineer import generate_features
 from sklearn.model_selection import train_test_split
