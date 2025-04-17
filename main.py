@@ -16,7 +16,7 @@ from visualization.plot_results import (
 
 def main():
     # 1. Загрузка данных
-    filepath = 'data/users_vs_bots.csv'  # путь к CSV-файлу
+    filepath = 'bots_vs_users.csv'  # путь к CSV-файлу
     df = load_data(filepath)
 
     # 2. Предобработка
