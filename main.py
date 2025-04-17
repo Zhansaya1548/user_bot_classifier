@@ -15,9 +15,10 @@ from visualization.plot_results import (
 
 
 def main():
-    # 1. Загрузка данных
-    filepath = 'bots_vs_users.csv'  # путь к CSV-файлу
-    df = load_data(filepath)
+    filepath = 'bots_vs_users.csv'  # убедись, что файл действительно в корне
+    loader = DataLoader(filepath)
+    data = loader.load_data()
+    print(data.head())
 
     # 2. Предобработка
     df = clean_data(df)
