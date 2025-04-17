@@ -8,7 +8,7 @@ class DataLoader:
 
         :param file_path: Путь к CSV-файлу с данными
         """
-        self.file_path = "bots_vs_users.csv"
+        self.file_path = file_path
         self.data = None
 
     def load_data(self) -> pd.DataFrame:
