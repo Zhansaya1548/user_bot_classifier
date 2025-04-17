@@ -21,8 +21,10 @@ def main():
     print(data.head())
 
     # 2. Предобработка
-    df = clean_data(df)
+    # 2. Предобработка
+    df = clean_data(data)  # ✅ передаём data
     df = generate_features(df)
+
 
     # 3. Выбор признаков и целевой переменной
     target_column = 'label'  # имя целевой переменной
